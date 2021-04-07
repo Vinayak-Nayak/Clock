@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clock</title>
+        <script src = "clock.js"></script>
+        <link href="clock.css" rel = "stylesheet">
+    </head>
+    <body>
+        
+        <div id = "analog" onload = "clock()">
+            <div class= "btn">
+                <button onclick = "view()">Analog Clock</button>
+                <button onclick = "hide()">Digital Clock</button>
+            </div>
+            <div class = "outer">
+                <div class="hand hour"></div>
+                <div class="hand min"></div>
+                <div class="hand sec"></div>
+            </div>
+        </div>
+        <div id = "digital" style="display: none;">
+            <div class= "btn">
+                <button onclick = "view()">Analog Clock</button>
+                <button onclick = "hide()">Digital Clock</button>
+            </div>
+            <div class = "num"  id = "clock">
+                00:00:00
+            </div>
+        </div>
+    </body>
+</html>
